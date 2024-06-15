@@ -15,25 +15,25 @@ public class SScan {
     public Object escanear(String type) {
         switch (type.toLowerCase()) {
             case "int":
-                return getInt("de tipo entero: ");
+                return getInt("(int) ");
             case "float":
-                return getFloat("de tipo float: ");
+                return getFloat("(float) ");
             case "long":
-                return getLong("de tipo long integer: ");
+                return getLong("(long) ");
             case "double":
-                return getDouble("de tipo double: ");
+                return getDouble("(double) ");
             case "byte":
-                return getByte("de tipo byte: ");
+                return getByte("(byte) ");
             case "short":
-                return getShort("de tipo short integer: ");
+                return getShort("(short) ");
             case "biginteger":
-                return getBigInteger("de tipo BigInteger: ");
+                return getBigInteger("(BigInt) ");
             case "bigdecimal":
-                return getBigDecimal("de tipo BigDecimal: ");
+                return getBigDecimal("(BigDec) ");
             case "string":
-                return getString("de tipo cadena: ");
+                return getString("(cadena) ");
             case "boolean":
-                return getBoolean("de tipo boolean (true/false): ");
+                return getBoolean("(boolean) ");
             default:
                 System.out.println("Tipo inválido, intente nuevamente.");
                 return null;
